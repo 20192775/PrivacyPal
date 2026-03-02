@@ -1,0 +1,24 @@
+# PHP
+*.log
+*.cache
+*.pid
+/vendor/
+composer.phar
+composer.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads (optional, if you don't want to track user uploads)
+/uploads/
