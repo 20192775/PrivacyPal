@@ -1,8 +1,36 @@
-# Ignore uploaded files assets/images/uploads/*
-!assets/images/uploads/.gitkeep # Ignore database config
-(add later with environment variables) #
-config/database.php # Ignore system files .DS_Store
-Thumbs.db desktop.ini # Ignore IDE files .vscode/ .idea/
-*.sublime-project *.sublime-workspace # Ignore temporary
-files *.tmp *.log *.swp *~ # Ignore vendor (if using
-Composer later) vendor/
+# PHP
+*.log
+*.cache
+*.pid
+/vendor/
+composer.phar
+composer.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads (optional, if you don't want to track user uploads)
+/uploads/
+# Ignore uploaded files
+assets/images/uploads/*
+!assets/images/uploads/.gitkeep
+# Ignore database config (add later with environment variables)
+config/database.php 
+#Ignore system files
+.DS_Store Thumbs.db desktop.ini 
+#Ignore IDE files
+.vscode/ .idea/*.sublime-project *.sublime-workspace
+# Ignore temporary files
+*.tmp *.log *.swp *~ 
+# Ignore vendor (if using Composer later) vendor/
