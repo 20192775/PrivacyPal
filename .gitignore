@@ -1,0 +1,50 @@
+# PHP
+*.log
+*.cache
+*.pid
+/vendor/
+composer.phar
+composer.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads (optional, if you don't want to track user uploads)
+/uploads/
+
+
+# --- User uploaded files (can be large; store separately) --- 
+assets/images/uploads/* 
+!assets/images/uploads/.gitkeep 
+  
+# --- Database config (contains passwords) --- 
+# Uncomment the next line ONLY if you use environment variables instead: 
+# config/database.php 
+  
+# --- OS files --- 
+.DS_Store 
+Thumbs.db 
+desktop.ini 
+  
+# --- IDE files --- 
+.vscode/ 
+.idea/ 
+  
+# --- Logs & temp files --- 
+*.log 
+*.tmp 
+*.swp 
+  
+# --- Composer vendor folder (if you add Composer later) --- 
+vendor/
